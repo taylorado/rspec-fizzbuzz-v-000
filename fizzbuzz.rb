@@ -1,12 +1,14 @@
 def fizzbuzz(int)
-  if (int % 3 == 0 && int % 5 == 0)
-    "FizzBuzz"
+  if (int % 3 == 0)
+      if (int % 5 == 0)
+        "FizzBuzz"
+      else
+        "Fizz"
+      end
 
-elseif int % 3 == 0
-"Fizz"
-
-elseif int % 5 == 0
+  elseif int % 5 == 0
 "Buzz"
+
 
 else
   nil
